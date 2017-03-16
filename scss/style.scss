@@ -28,15 +28,19 @@ $bg-green: rgb(131, 201, 18);
 $bg-blue: $color-blue;
 
 html{
-	//	font-family: $font-family-base;
+	font-size: $font-size-root;
+	font-family: $baseFont;
 }
 body{
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	background-image: url(../img/header.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 
-section{padding-top: 70px;padding-bottom: 70px;}
+section{padding-top: 70px;padding-bottom: 70px;font-size: 1.8em;}
 
 h1,h2,h3,h4,h5{
 	font-family: $titleFont;
@@ -44,11 +48,19 @@ h1,h2,h3,h4,h5{
 	margin-bottom: 50px;
 	//	color: $color-black;
 }
+h1{
+	font-family: 'Pacifico', cursive;
+	font-size: 76px;
+	text-align: left;
+	margin-left: -1em;
+	padding-top: .5em;
+}
 h4{
 	font-size: 1.2em;
 }
 h2{
-	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 3.7rem;
 }
 
 .lightBg{
@@ -56,9 +68,9 @@ h2{
 	background-color: $whiteBg;
 }
 
-.redBg{
-	color: $whiteColor;
-	background-color: $mainColor;
+.mainColorBg{
+	color: $whiteColor ;
+	background-color: $mainColor ;
 }
 
 .red{color:$color-red}
@@ -80,5 +92,100 @@ h2{
 .dib{display: inline-block;}
 .subtitle{
 	font-weight: bold;
-	font-size: 1em;
+	font-size: 2.8em;
+}
+.brandColor{
+	color: $brandColor;
+}
+/*---------------------Header--------------------*/
+
+header{
+	padding-bottom: 205px; //decalage background image
+	#links{
+		text-align: right;
+		a{
+			color: $secondaryColor;
+			text-decoration: none;
+			text-align: center;
+			margin: 0 10px;
+			padding: 10px 9px;
+			font-size: 1.8rem;
+			position: relative;
+			&:after{
+				content:"";
+				width: 0px;
+				position: absolute;
+				background-color: $mainColor;
+				height: 3px;
+				top: 40px;
+				left:50%;
+				transition: all .2s ease;
+			}
+			&:hover:after, &.active:after{
+				width: 100%;
+				left: 0;
+			}
+		}
+	}
+}
+
+/*---------------------Présentation--------------------*/
+
+#presentation{
+	font-size: 1rem;
+	p{
+		@extend .pt-md;
+		font-size: 1.8em;
+	}
+
+}
+
+/*---------------------Présentation--------------------*/
+
+#promo{
+	padding: 0;
+	background-image: url(../img/promo.jpg);
+	height: 396px;
+	width: 1306px;
+	margin: 30px auto;
+	text-align: right;
+	font-size: 1rem;
+	article{
+		width: 755px;
+		text-align: left;
+		padding: 30px;
+		margin: 30px;
+		display: inline-block;
+		font-size: 1.6em;
+		h3{
+			text-align: left;
+			color: $mainColor;
+			font-size: 2em;
+		}
+		div{
+			text-align: right;
+			font-size: .8em;
+			margin-bottom: 1em;
+		}
+		a{
+			font-size: 1.2em;
+			float: right;
+			display: inline-block;
+			padding: 5px 15px;
+			border: 2px solid;
+			transition: all .3s ease;
+			&:hover{
+				color: $mainColor;
+				background-color: $whiteColor;
+				border: 2px $mainColor solid;
+
+			}
+		}
+	}
+}
+
+/*---------------------Explications--------------------*/
+
+#explanation{
+
 }
