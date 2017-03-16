@@ -1,0 +1,84 @@
+//font-family: 'Open Sans', sans-serif;
+//font-family: 'Pacifico', cursive;
+//font-family: 'Raleway', sans-serif;
+
+$baseFont: 'Raleway', sans-serif;
+$titleFont : 'Open Sans', sans-serif;
+$font-size-root: 62.5%;
+$font-size-base: 1.4rem; //14px
+$line-height-base: 1.4;
+
+$mainColor : #d14b3a;
+$brandColor : #d14b3a;
+$secondaryColor : #535142;
+$whiteBg: rgb(251, 251, 251);
+$whiteColor: rgb(251, 251, 251);
+
+$color-black: #333;
+$color-red: #c92b2b;
+$color-blue: #2a97dc;
+$color-green: #47bfa4;
+$font-grey: #464a4c;
+
+$bg-red: rgb(219, 41, 41);
+$bg-red2: #ff4242;
+$bg-orange: rgb(247, 142, 22);
+$bg-yellow: rgb(252, 231, 0);
+$bg-green: rgb(131, 201, 18);
+$bg-blue: $color-blue;
+
+html{
+	//	font-family: $font-family-base;
+}
+body{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+section{padding-top: 70px;padding-bottom: 70px;}
+
+h1,h2,h3,h4,h5{
+	font-family: $titleFont;
+	text-align : center;
+	margin-bottom: 50px;
+	//	color: $color-black;
+}
+h4{
+	font-size: 1.2em;
+}
+h2{
+	font-weight: 700;
+}
+
+.lightBg{
+	color: $secondaryColor;
+	background-color: $whiteBg;
+}
+
+.redBg{
+	color: $whiteColor;
+	background-color: $mainColor;
+}
+
+.red{color:$color-red}
+.blue{color:$color-blue}
+.green{color:$color-green}
+
+.ml-md{margin-left: 30px;}
+.mb-md{margin-bottom: 30px;}
+.mr-md{margin-right: 30px;}
+.mt-md{margin-top: 30px;}
+
+.pl-md{padding-left: 30px;}
+.pb-md{padding-bottom: 30px;}
+.pr-md{padding-right: 30px;}
+.pt-md{padding-top: 30px;}
+
+.vam{vertical-align: middle;}
+.tac{text-align: center;}
+.dib{display: inline-block;}
+.subtitle{
+	font-weight: bold;
+	font-size: 1em;
+}
