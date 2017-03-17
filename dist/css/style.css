@@ -10,150 +10,178 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-image: url(../img/header.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
 }
 
-/* line 43, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+/* line 40, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
 section {
   padding-top: 70px;
   padding-bottom: 70px;
   font-size: 1.8em;
 }
 
-/* line 45, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+/* line 42, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
 h1, h2, h3, h4, h5 {
   font-family: "Open Sans", sans-serif;
   text-align: center;
   margin-bottom: 50px;
 }
 
-/* line 51, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+/* line 48, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
 h1 {
   font-family: 'Pacifico', cursive;
-  font-size: 76px;
+  font-size: 7.6em;
   text-align: left;
   margin-left: -1em;
   padding-top: .5em;
 }
 
-/* line 58, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+/* line 55, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
 h4 {
-  font-size: 1.2em;
+  font-size: 2.0em;
 }
 
-/* line 61, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+/* line 58, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
 h2 {
   text-transform: uppercase;
   font-size: 3.7rem;
+  z-index: 1;
 }
 
-/* line 66, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+/* line 63, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+h3 {
+  font-size: 2.5rem;
+  text-align: left;
+}
+
+/* line 68, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
 .lightBg {
   color: #535142;
   background-color: #fbfbfb;
 }
 
-/* line 71, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+/* line 73, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
 .mainColorBg {
   color: #fbfbfb;
   background-color: #d14b3a;
 }
 
-/* line 76, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+/* line 78, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
 .red {
   color: #c92b2b;
 }
 
-/* line 77, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+/* line 79, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
 .blue {
   color: #2a97dc;
 }
 
-/* line 78, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+/* line 80, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
 .green {
   color: #47bfa4;
 }
 
-/* line 80, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+/* line 82, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
 .ml-md {
   margin-left: 30px;
 }
 
-/* line 81, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+/* line 83, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
 .mb-md {
   margin-bottom: 30px;
 }
 
-/* line 82, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+/* line 84, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
 .mr-md {
   margin-right: 30px;
 }
 
-/* line 83, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+/* line 85, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
 .mt-md {
   margin-top: 30px;
 }
 
-/* line 85, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+/* line 87, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
 .pl-md {
   padding-left: 30px;
 }
 
-/* line 86, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+/* line 88, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
 .pb-md {
   padding-bottom: 30px;
 }
 
-/* line 87, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+/* line 89, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
 .pr-md {
   padding-right: 30px;
 }
 
-/* line 88, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+/* line 90, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
 .pt-md, #presentation p {
   padding-top: 30px;
 }
 
-/* line 90, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+/* line 92, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
 .vam {
   vertical-align: middle;
 }
 
-/* line 91, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+/* line 93, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
 .tac {
   text-align: center;
 }
 
-/* line 92, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+/* line 94, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
 .dib {
   display: inline-block;
 }
 
-/* line 93, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+/* line 95, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
 .subtitle {
   font-weight: bold;
-  font-size: 2.8em;
+  font-size: 2.2rem;
 }
 
-/* line 97, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+/* line 99, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
 .brandColor {
   color: #d14b3a;
 }
 
-/*---------------------Header--------------------*/
 /* line 102, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
-header {
-  padding-bottom: 205px;
+section {
+  font-size: 1rem;
 }
 
-/* line 104, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+/* line 105, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+p {
+  font-size: 1.6rem;
+}
+
+/* line 109, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+.fili {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 0;
+}
+
+/*---------------------Header--------------------*/
+/* line 119, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+header {
+  background-image: url(../img/header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 24%;
+}
+
+/* line 125, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
 header #links {
   text-align: right;
 }
 
-/* line 106, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+/* line 127, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
 header #links a {
   color: #535142;
   text-decoration: none;
@@ -164,7 +192,7 @@ header #links a {
   position: relative;
 }
 
-/* line 114, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+/* line 135, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
 header #links a:after {
   content: "";
   width: 0px;
@@ -176,25 +204,67 @@ header #links a:after {
   transition: all .2s ease;
 }
 
-/* line 124, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+/* line 145, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
 header #links a:hover:after, header #links a.active:after {
   width: 100%;
   left: 0;
 }
 
+@media (max-width: 375px) {
+  /* line 154, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+  h1 {
+    font-size: 4.3em;
+    margin: 0;
+  }
+  /* line 158, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+  header {
+    height: 350px;
+    background-position: bottom;
+    background-size: 100% auto;
+    background-color: #f1eee7;
+    padding-bottom: 0;
+  }
+  /* line 164, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+  header figure {
+    margin: 0;
+  }
+  /* line 169, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+  nav img {
+    height: 80%;
+  }
+  /* line 173, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+  #links {
+    display: none !important;
+  }
+}
+
 /*---------------------Présentation--------------------*/
-/* line 134, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+/* line 180, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
 #presentation {
+  padding-top: 112px;
   font-size: 1rem;
 }
 
-/* line 136, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+/* line 183, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
 #presentation p {
   font-size: 1.8em;
 }
 
+/* line 187, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+#presentation img {
+  top: -103px;
+  width: 76px;
+}
+
+/* line 191, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+#presentation .subtitle {
+  padding-top: 20px;
+  margin: 0 auto;
+  display: block;
+}
+
 /*---------------------Présentation--------------------*/
-/* line 145, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+/* line 201, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
 #promo {
   padding: 0;
   background-image: url(../img/promo.jpg);
@@ -205,7 +275,7 @@ header #links a:hover:after, header #links a.active:after {
   font-size: 1rem;
 }
 
-/* line 153, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+/* line 209, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
 #promo article {
   width: 755px;
   text-align: left;
@@ -215,21 +285,19 @@ header #links a:hover:after, header #links a.active:after {
   font-size: 1.6em;
 }
 
-/* line 160, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+/* line 216, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
 #promo article h3 {
-  text-align: left;
   color: #d14b3a;
-  font-size: 2em;
 }
 
-/* line 165, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+/* line 219, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
 #promo article div {
   text-align: right;
   font-size: .8em;
   margin-bottom: 1em;
 }
 
-/* line 170, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+/* line 224, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
 #promo article a {
   font-size: 1.2em;
   float: right;
@@ -239,13 +307,153 @@ header #links a:hover:after, header #links a.active:after {
   transition: all .3s ease;
 }
 
-/* line 177, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+/* line 231, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
 #promo article a:hover {
   color: #d14b3a;
   background-color: #fbfbfb;
   border: 2px #d14b3a solid;
 }
 
+/* line 239, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+#promomobile {
+  background-image: url(../img/promomobile.jpg);
+  padding: 0;
+  width: 375px;
+  height: 829px;
+  margin: 0 auto;
+  font-size: 1rem;
+  position: relative;
+}
+
+/* line 247, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+#promomobile article {
+  position: absolute;
+  bottom: 0;
+  width: 375px;
+  text-align: left;
+  padding: 30px;
+  margin: 0;
+  display: inline-block;
+  font-size: 1.6em;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+/* line 257, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+#promomobile article h3 {
+  color: #d14b3a;
+}
+
+/* line 260, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+#promomobile article div {
+  text-align: right;
+  font-size: .8em;
+  margin-bottom: 1em;
+}
+
+/* line 265, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+#promomobile article a {
+  font-size: 1.2em;
+  float: right;
+  display: inline-block;
+  padding: 5px 15px;
+  border: 2px solid;
+  transition: all .3s ease;
+}
+
+/* line 272, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+#promomobile article a:hover {
+  color: #d14b3a;
+  background-color: #fbfbfb;
+  border: 2px #d14b3a solid;
+}
+
 /*---------------------Explications--------------------*/
+/* line 284, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+#explanation div {
+  height: 474px;
+}
+
+/* line 289, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+#explanation article div div {
+  padding: 8%;
+}
+
+/* line 292, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+#explanation .subtitle {
+  font-size: 1.8em;
+}
+
+/* line 295, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+#explanation figure {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 299, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+#explanation p {
+  font-size: 1.6em;
+}
+
+@media (max-width: 375px) {
+  /* line 305, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+  #explanation {
+    font-size: 0.9rem;
+  }
+  /* line 307, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+  #explanation div {
+    height: auto;
+  }
+  /* line 310, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+  #explanation article:last-child {
+    display: flex;
+    flex-direction: column;
+  }
+  /* line 313, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+  #explanation article:last-child > figure {
+    order: 1;
+  }
+}
+
+/*---------------------Visite--------------------*/
+/* line 323, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+#visite .headers, #visite h3 {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* line 328, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+#visite h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* line 330, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+#visite img {
+  top: 34px;
+  width: 200px;
+}
+
+/* line 334, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+#visite ul {
+  margin: 30px 0;
+  list-style: none;
+  font-size: 1.8rem;
+}
+
+/* line 339, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+#visite li:before {
+  content: "- ";
+}
+
+/* line 342, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+#visite figure {
+  text-align: center;
+}
+
+/* line 344, C:/Users/Web Janv 2015_2/Desktop/Paris Vélo Tour Thomas/web/scss/style.scss */
+#visite figure img {
+  width: 80%;
+}
 
 /*# sourceMappingURL=../dist/css/style.map */

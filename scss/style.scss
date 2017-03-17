@@ -35,9 +35,6 @@ body{
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	background-image: url(../img/header.jpg);
-	background-repeat: no-repeat;
-	background-size: 100%;
 }
 
 section{padding-top: 70px;padding-bottom: 70px;font-size: 1.8em;}
@@ -50,17 +47,22 @@ h1,h2,h3,h4,h5{
 }
 h1{
 	font-family: 'Pacifico', cursive;
-	font-size: 76px;
+	font-size: 7.6em;
 	text-align: left;
 	margin-left: -1em;
 	padding-top: .5em;
 }
 h4{
-	font-size: 1.2em;
+	font-size: 2.0em;
 }
 h2{
 	text-transform: uppercase;
 	font-size: 3.7rem;
+	z-index: 1;
+}
+h3{
+	font-size: 2.5rem;
+	text-align: left;
 }
 
 .lightBg{
@@ -92,15 +94,34 @@ h2{
 .dib{display: inline-block;}
 .subtitle{
 	font-weight: bold;
-	font-size: 2.8em;
+	font-size: 2.2rem;
 }
 .brandColor{
 	color: $brandColor;
 }
+section{
+	font-size: 1rem;
+}
+p{
+	font-size: 1.6rem;
+}
+
+.fili{
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 0;
+}
 /*---------------------Header--------------------*/
 
 header{
-	padding-bottom: 205px; //decalage background image
+	background-image: url(../img/header.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding-bottom: 24%; //decalage background image
 	#links{
 		text-align: right;
 		a{
@@ -129,13 +150,48 @@ header{
 	}
 }
 
+@media (max-width: 375px){
+	h1{
+		font-size: 4.3em;
+		margin: 0;
+	}
+	header{
+		height: 350px;
+		background-position: bottom;
+		background-size: 100% auto;
+		background-color: #f1eee7;
+		padding-bottom: 0;
+		figure{
+			margin: 0;
+		}
+	}
+	nav{
+		img{
+			height: 80%;
+		}
+	}
+	#links{
+		display: none !important;
+	}
+}
+
 /*---------------------Présentation--------------------*/
 
 #presentation{
+	padding-top: 112px;
 	font-size: 1rem;
 	p{
 		@extend .pt-md;
 		font-size: 1.8em;
+	}
+	img{
+		top:-103px;
+		width: 76px;
+	}
+	.subtitle{
+		padding-top: 20px;
+		margin: 0 auto;
+		display: block;
 	}
 
 }
@@ -158,9 +214,7 @@ header{
 		display: inline-block;
 		font-size: 1.6em;
 		h3{
-			text-align: left;
 			color: $mainColor;
-			font-size: 2em;
 		}
 		div{
 			text-align: right;
@@ -178,7 +232,47 @@ header{
 				color: $mainColor;
 				background-color: $whiteColor;
 				border: 2px $mainColor solid;
-
+			}
+		}
+	}
+}
+#promomobile{
+	background-image: url(../img/promomobile.jpg);
+	padding: 0;
+	width: 375px;
+	height: 829px;
+	margin: 0 auto;
+	font-size: 1rem;
+	position: relative;
+	article{
+		position: absolute;
+		bottom: 0;
+		width: 375px;
+		text-align: left;
+		padding: 30px;
+		margin: 0;
+		display: inline-block;
+		font-size: 1.6em;
+		background-color: rgba(255, 255, 255, 0.85);
+		h3{
+			color: $mainColor;
+		}
+		div{
+			text-align: right;
+			font-size: .8em;
+			margin-bottom: 1em;
+		}
+		a{
+			font-size: 1.2em;
+			float: right;
+			display: inline-block;
+			padding: 5px 15px;
+			border: 2px solid;
+			transition: all .3s ease;
+			&:hover{
+				color: $mainColor;
+				background-color: $whiteColor;
+				border: 2px $mainColor solid;
 			}
 		}
 	}
@@ -187,5 +281,68 @@ header{
 /*---------------------Explications--------------------*/
 
 #explanation{
+	div{
+		height: 474px;
+		//		display: flex;
+		//		align-items: center;
+	}
+	article div div{
+		padding: 8%;
+	}
+	.subtitle{
+		font-size: 1.8em;
+	}
+	figure{
+		padding: 0;
+		margin: 0;
+	}
+	p{
+		font-size: 1.6em;
+	}
 
+}
+@media (max-width: 375px){
+	#explanation {
+		font-size: 0.9rem;
+		div{
+			height: auto;
+		}
+		article:last-child{
+			display: flex;
+			flex-direction: column;
+			&>figure{
+				order: 1;
+			}
+		}
+	}
+}
+
+/*---------------------Visite--------------------*/
+
+#visite{
+	.headers,h3{
+		text-align: center;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	h3{font-weight: bold;
+		margin-bottom: 10px;}
+	img{
+		top:34px;
+		width: 200px;
+	}
+	ul{
+		margin: 30px 0;
+		list-style: none;
+		font-size: 1.8rem;
+	}
+	li:before{
+		content :"- ";
+	}
+	figure{
+		text-align: center;
+		img{
+			width: 80%;
+		}
+	}
 }
