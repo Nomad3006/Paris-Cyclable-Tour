@@ -36,6 +36,13 @@ body{
 	margin: 0;
 	box-sizing: border-box;
 }
+#bodyBg{
+	background-image: url(../img/headeralt.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center 0;
+	background-color: #e6dfd9;
+}
 
 section{padding-top: 70px;padding-bottom: 70px;font-size: 1.8em;}
 
@@ -116,21 +123,26 @@ p{
 }
 /*---------------------Header--------------------*/
 
-header{
+#headerMain{
 	background-image: url(../img/header.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	padding-bottom: 24%; //decalage background image
+}
+header{
+	width: 100vw;
+	overflow: hidden;
+	h1{	padding-bottom: 24%;} //decalage background image
 	#links{
 		text-align: right;
+
 		a{
 			color: $secondaryColor;
 			text-decoration: none;
 			text-align: center;
-			margin: 0 10px;
-			padding: 10px 9px;
-			font-size: 1.8rem;
+			margin: 0 9px;
+			padding: 10px 7px;
+			font-size: 1.6rem;
 			position: relative;
 			&:after{
 				content:"";
@@ -148,32 +160,83 @@ header{
 			}
 		}
 	}
+	#bannerPartner{
+		background-color: #f1eee7;
+		width: 100%;
+		a{
+			text-align: center;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+		img{
+			width: 200px;
+		}
+	}
 }
-
+.header-other{
+	background-position: center 11%;
+	h1{
+		padding-bottom: 5%;
+		margin-bottom: 0;
+	}
+}
 @media (max-width: 375px){
+	body{
+		padding-top: 97px;
+	}
 	h1{
 		font-size: 4.3em;
-		margin: 0;
+		margin: -24px 0 0 0;
 	}
 	header{
-		height: 350px;
-		background-position: bottom;
-		background-size: 100% auto;
+		height: 360px;
+		background-size: 130% !important;
+		background-position: center 16px !important;
 		background-color: #f1eee7;
 		padding-bottom: 0;
 		figure{
 			margin: 0;
+			height: 72px;
 		}
+	}
+	.header-other{
+		height: 156px;
 	}
 	nav{
+		top: 0;
+		z-index: 1000;
+		width: 100%;
+		position: fixed;
+		background-color: #f1eee7;
 		img{
-			height: 80%;
+			height: 95%;
 		}
 	}
+	a.active:after{
+		width: 30% !important;
+		display: block;
+		left: 0;right: 0;
+		margin: 0 auto;
+	}
 	#links{
-		display: none !important;
+		z-index: 1000;
+		position: fixed;
+		width: 100vw;
+		height: 0;
+		top: 42px;
+		left: 0;
+		overflow: hidden;
+		background-color: #f1eee7;
+		transition: all 1s ease;
+		a{
+			display: block;
+		}
+	}
+	#bannerPartner{
+		height: 300px;
 	}
 }
+
 
 /*---------------------Présentation--------------------*/
 
@@ -203,7 +266,7 @@ header{
 	background-image: url(../img/promo.jpg);
 	height: 396px;
 	width: 1306px;
-	margin: 30px auto;
+	margin: 20px auto;
 	text-align: right;
 	font-size: 1rem;
 	article{
@@ -237,9 +300,10 @@ header{
 	}
 }
 #promomobile{
+	display: none;
 	background-image: url(../img/promomobile.jpg);
 	padding: 0;
-	width: 375px;
+	width: 100vw;
 	height: 829px;
 	margin: 0 auto;
 	font-size: 1rem;
@@ -277,12 +341,20 @@ header{
 		}
 	}
 }
-
+@media (max-width: 375px){
+	#promo{
+		display: none;
+	}
+	#promomobile{
+		display: block;
+	}
+}
 /*---------------------Explications--------------------*/
 
 #explanation{
+	padding: 0;
 	div{
-		height: 474px;
+//		height: 474px;
 		//		display: flex;
 		//		align-items: center;
 	}
@@ -299,11 +371,17 @@ header{
 	p{
 		font-size: 1.6em;
 	}
+	img{
+		width: 100%;
+	}
 
 }
 @media (max-width: 375px){
 	#explanation {
 		font-size: 0.9rem;
+		.row{
+			margin: 0;
+		}
 		div{
 			height: auto;
 		}
@@ -326,7 +404,8 @@ header{
 		padding-bottom: 10px;
 	}
 	h3{font-weight: bold;
-		margin-bottom: 10px;}
+		margin-bottom: 10px;
+	}
 	img{
 		top:34px;
 		width: 200px;
@@ -345,4 +424,255 @@ header{
 			width: 80%;
 		}
 	}
+}
+
+form{
+	font-size: 1.8em;
+	background-color: rgba(241, 238, 231, 0.98);
+	border-radius: 10px;
+	.form-control{
+		display: inline-block !important;
+		border-radius: 6px;
+		font-size: 1.6rem;
+	}
+	h3{
+		color: $mainColor;
+	}
+	input{
+		vertical-align: top;
+	}
+	.col-form-label{
+		color: $mainColor !important;
+	}
+	textarea{
+		height: 90px;
+	}
+	#subButton{
+		font-size: 2rem;
+		margin: 30px auto;
+		display: block !important;
+		color: $whiteColor;
+		background-color: $mainColor;
+		border : 3px solid $whiteColor;
+		border-radius: 50px;
+		cursor: pointer;
+		width: 300px;
+		transition: all .5s ease;
+		&:hover{
+			width: 350px;
+			color: $mainColor;
+			background-color: $whiteColor;
+			border : 3px solid $mainColor;
+		}
+	}
+}
+
+
+span.menu {
+	position: absolute;
+	left: 150%;
+	top: 7px;
+	font-size: 22px;
+	font-family: 'Comfortaa', cursive, sans-serif;
+	letter-spacing: 1px;
+	color: $secondaryColor;
+}
+
+.containerBurger {
+	position: absolute;
+	display: none;
+	top: 40%;
+	right: 50px;
+	margin: -20px 0 0 -65px;
+	width: 130px;
+	height: 40px;
+}
+
+.containerBurger input {
+	display: none;
+}
+
+.containerBurger label {
+	position: relative;
+	width: 40px;
+	height: 40px;
+	display: block;
+	cursor: pointer;
+	background: transparent;
+}
+
+/* Exit Icon */
+
+.containerBurger label:before,
+.containerBurger input:checked + label:before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	margin-top: -2px;
+	width: 40px;
+	height: 4px;
+	border-radius: 2px;
+	background: $secondaryColor;
+}
+
+.containerBurger label:before {
+	-webkit-animation: animationOneReverse 1s ease forwards;
+	animation: animationOneReverse 1s ease forwards;
+}
+
+@-webkit-keyframes animationOneReverse {
+	0% { -webkit-transform: rotate(315deg); }
+	25% { -webkit-transform: rotate(360deg); }
+	50%, 100% { -webkit-transform: rotate(0deg); }
+}
+@keyframes animationOneReverse {
+	0% { transform: rotate(315deg); }
+	25% { transform: rotate(360deg); }
+	50%, 100% { transform: rotate(0deg); }
+}
+
+.containerBurger input:checked + label:before {
+	-webkit-animation: animationOne 1s ease forwards;
+	animation: animationOne 1s ease forwards;
+}
+
+@-webkit-keyframes animationOne {
+	0%, 50% { -webkit-transform: rotate(0deg); }
+	75% { -webkit-transform: rotate(360deg); }
+	100% { -webkit-transform: rotate(315deg); }
+}
+@keyframes animationOne {
+	0%, 50% { transform: rotate(0deg); }
+	75% { transform: rotate(360deg); }
+	100% { transform: rotate(315deg); }
+}
+
+.containerBurger label:after,
+.containerBurger input:checked + label:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	margin-top: -2px;
+	width: 40px;
+	height: 4px;
+	border-radius: 2px;
+	background: $secondaryColor;
+}
+
+.containerBurger label:after {
+	-webkit-animation: animationTwoReverse 1s ease forwards;
+	animation: animationTwoReverse 1s ease forwards;
+}
+
+@-webkit-keyframes animationTwoReverse {
+	0% { -webkit-transform: rotate(405deg); }
+	25% { -webkit-transform: rotate(450deg); }
+	50%, 100% { -webkit-transform: rotate(0deg); }
+}
+@keyframes animationTwoReverse {
+	0% { transform: rotate(405deg); }
+	25% { transform: rotate(450deg); }
+	50%, 100% { transform: rotate(0deg); }
+}
+
+.containerBurger input:checked + label:after {
+	-webkit-animation: animationTwo 1s ease forwards;
+	animation: animationTwo 1s ease forwards;
+}
+
+@-webkit-keyframes animationTwo {
+	0%, 50% { -webkit-transform: rotate(0deg); }
+	75% { -webkit-transform: rotate(450deg); }
+	100% { -webkit-transform: rotate(405deg); }
+}
+@keyframes animationTwo {
+	0%, 50% { transform: rotate(0deg); }
+	75% { transform: rotate(450deg); }
+	100% { transform: rotate(405deg); }
+}
+
+/* Burger Icon */
+
+.containerBurger label .burger:before {
+	content: '';
+	position: absolute;
+	top: 6px;
+	width: 40px;
+	height: 4px;
+	border-radius: 2px;
+	background: $secondaryColor;
+	-webkit-animation: animationBurgerTopReverse 1s ease forwards;
+	animation: animationBurgerTopReverse 1s ease forwards;
+}
+
+@-webkit-keyframes animationBurgerTopReverse {
+	0%, 50% { -webkit-transform: translateY(12px); opacity: 0; }
+	51% { -webkit-transform: translateY(12px); opacity: 1; }
+	100% { -webkit-transform: translateY(0px); opacity: 1; }
+}
+@keyframes animationBurgerTopReverse {
+	0%, 50% { transform: translateY(12px); opacity: 0; }
+	51% { transform: translateY(12px); opacity: 1; }
+	100% { transform: translateY(0px); opacity: 1; }
+}
+
+.containerBurger input:checked + label .burger:before {
+	-webkit-animation: animationBurgerTop 1s ease forwards;
+	animation: animationBurgerTop 1s ease forwards;
+}
+
+@-webkit-keyframes animationBurgerTop {
+	0% { -webkit-transform: translateY(0px); opacity: 1; }
+	50% { -webkit-transform: translateY(12px); opacity: 1; }
+	51%, 100% { -webkit-transform: translateY(12px); opacity: 0; }
+}
+@keyframes animationBurgerTop {
+	0% { transform: translateY(0px); opacity: 1; }
+	50% { transform: translateY(12px); opacity: 1; }
+	51%, 100% { transform: translateY(12px); opacity: 0; }
+}
+
+.containerBurger label .burger:after {
+	content: '';
+	position: absolute;
+	bottom: 6px;
+	width: 40px;
+	height: 4px;
+	border-radius: 2px;
+	background: $secondaryColor;
+	-webkit-animation: animationBurgerBottomReverse 1s ease forwards;
+	animation: animationBurgerBottomReverse 1s ease forwards;
+}
+
+@-webkit-keyframes animationBurgerBottomReverse {
+	0%, 50% { -webkit-transform: translateY(-12px); opacity: 0; }
+	51% { -webkit-transform: translateY(-12px); opacity: 1; }
+	100% { -webkit-transform: translateY(0px); opacity: 1; }
+}
+@keyframes animationBurgerBottomReverse {
+	0%, 50% { transform: translateY(-12px); opacity: 0; }
+	51% { transform: translateY(-12px); opacity: 1; }
+	100% { transform: translateY(0px); opacity: 1; }
+}
+
+.containerBurger input:checked + label .burger:after {
+	-webkit-animation: animationBurgerBottom 1s ease forwards;
+	animation: animationBurgerBottom 1s ease forwards;
+}
+
+@-webkit-keyframes animationBurgerBottom {
+	0% { -webkit-transform: translateY(0px); opacity: 1; }
+	50% { -webkit-transform: translateY(-12px); opacity: 1; }
+	51%, 100% { -webkit-transform: translateY(-12px); opacity: 0; }
+}
+@keyframes animationBurgerBottom {
+	0% { transform: translateY(0px); opacity: 1; }
+	50% { transform: translateY(-12px); opacity: 1; }
+	51%, 100% { transform: translateY(-12px); opacity: 0; }
+}
+@media (max-width: 375px){
+	.containerBurger{
+		display: block;
+	}
+
 }

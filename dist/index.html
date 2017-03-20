@@ -9,25 +9,39 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 
-	<body id="body">
-		<header>
+	<body>
+		<header id="headerMain">
 			<div class="container">
 				<nav class="row">
 					<figure id="brand" class="col-auto">
 						<a href="index.html"><img src="img/brand.png" alt="logo de la marque"></a>
 					</figure>
-					<div id="links" class="col mt-md">
+					<div class="containerBurger">
+						<input id="click" name="exit" type="checkbox" onclick="handleBurger(this);"/>
+						<label for="click"><span class="burger"></span><span class="menu">Menu</span></label>
+					</div>
+					<div id="links" class="col-md mt-md">
 						<a href="index.html" class="active">Accueil</a>
 						<a href="">Visites à vélo</a>
 						<a href="">Visites musées</a>
 						<a href="">Visites à pied</a>
+						<a href="">Reservation</a>
 						<a href="">Professionnels</a>
 						<a href="">FAQ</a>
 						<a href="">Liens</a>
-						<a href="">Contact</a>
+						<a href="contact.php">Contact</a>
 					</div>
 				</nav>
 				<h1><span class="brandColor">Paris</span><br>Cyclable Tour</h1>
+			</div>
+			<div id="bannerPartner">
+				<div class="container">
+					<div class="row">
+						<a href="http://www.parisinfo.com/" class="col-md-4"><img src="img/OTC.png" alt=""></a>
+						<a href="http://www.cci-paris-idf.fr/" class="col-md-4"><img src="img/cci.png" alt=""></a>
+						<a href="http://www.paris.fr/" class="col-md-4"><img src="img/mairie.png" alt=""></a>
+					</div>
+				</div>
 			</div>
 		</header>
 		<section id="presentation" class="mainColorBg">
@@ -36,7 +50,7 @@
 				<img class="fili" src="img/tower.png" alt="">
 				<span class="subtitle tac">Avec plus de 350 km de pistes cyclables, Paris est devenue<br>« Une ville à vélo »</span>
 				<p>
-					<strong>Paris Cyclable Tour</strong> vous propose de découvrir Paris, son histoire, ses histoires, en utilisant un moyen de transport simple, économique et écologique… La bicyclette.
+					<strong>Paris Cyclable Tour</strong> vous propose de découvrir Paris, son histoire, en utilisant un moyen de transport simple, économique et écologique… La bicyclette.
 					<br>
 					Nos visites guidées de Paris à vélo permettent d’allier la culture à la détente. Alors laissez-vous gagner par le charme de la capitale, accompagné par l’un de nos guides-interprètes, en participant à l’une de nos visites originales de Paris à vélo.
 				</p>
@@ -62,7 +76,6 @@
 				<p>Pâques et ses chasses aux œufs est l'un des moments privilégiés des enfants.
 					Paris Cyclable Tour organise une chasse aux oeufs dans différent lieux emblématique de la capitale (esplanade des invalides, coulée vertes, Parc Montsouris, Champs de Mars, Palais Royal, Jardins d'Acclimatation...).
 					Vous pourrez en famille faire tout ou partie des différentes chasses.
-					<br>
 				</p>
 				<div>
 					<span>Week-end de Pâques (15, 16 et 17 avril)</span>
@@ -73,7 +86,7 @@
 		<section id="explanation" class="container">
 			<article class="row">
 				<div class="col-sm-6 mainColorBg">
-					<div>
+					<div class="mainColorBg">
 						<h3>Visite de Paris à vélo</h3>
 						<p class="subtitle">Vous voulez découvrir les trésors cachés de Paris Inaccessibles en bus ?
 						</p>

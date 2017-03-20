@@ -1,0 +1,90 @@
+<!--<?php
+//if "email" variable is filled out, send email
+if (!empty($_POST))  {
+
+//Email information
+$admin_email = "toma06pal@gmail.com";
+$email = $_REQUEST['email'];
+$name = $_REQUEST['name'];
+$surname = $_REQUEST['surname'];
+$comment = $_REQUEST['message'];
+$tel = $_REQUEST['message'];
+
+//send email
+mail($admin_email, "$name ." " . $surname", $message . "Tel :" . $tel, "From:" . $email);
+}
+
+?>
+-->
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title></title>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Pacifico|Raleway" rel="stylesheet">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body id="bodyBg">
+		<header class="header-other">
+			<div class="container">
+				<nav class="row">
+					<figure id="brand" class="col-auto">
+						<a href="index.html"><img src="img/brand.png" alt="logo de la marque"></a>
+					</figure>
+					<div class="containerBurger">
+						<input id="click" name="exit" type="checkbox" onclick="handleBurger(this);"/>
+						<label for="click"><span class="burger"></span><span class="menu">Menu</span></label>
+					</div>
+					<div id="links" class="col-md mt-md">
+						<a href="index.html">Accueil</a>
+						<a href="">Visites à vélo</a>
+						<a href="">Visites musées</a>
+						<a href="">Visites à pied</a>
+						<a href="">Reservation</a>
+						<a href="">Professionnels</a>
+						<a href="">FAQ</a>
+						<a href="">Liens</a>
+						<a href="" class="active">Contact</a>
+					</div>
+				</nav>
+				<h1><span class="brandColor">Paris</span><br>Cyclable Tour</h1>
+			</div>
+		</header>
+		<form class="container" action="" method="post" onsubmit="return check(this)">
+			<h3 class="pt-md tac">Besoin d'un renseignement ? Contactez-nous.</h3>
+			<div class="row justify-content-center">
+				<div class="form-group col-md-3">
+					<label for="name-input" class=" col-form-label">Nom</label>
+					<input class="form-control" type="text" name="name" value="" id="name-input"  onblur="check(this)" >
+				</div>
+				<div class="form-group col-md-3">
+					<label for="surname-input" class="col-form-label">Prenom</label>
+					<input class="form-control" type="text" name="surname" value="" id="surname-input"  onblur="check(this)" >
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="form-group col-md-3">
+					<label for="email-input" class="col-form-label">Email</label>
+					<input class="form-control" type="email" name="email" value="" id="email-input" onblur="check(this)">
+				</div>
+				<div class="form-group col-md-3">
+					<label for="tel-input" class=" col-form-label">Telephone</label>
+					<input class="form-control" type="tel" name="tel" value="" id="tel-input"  onblur="check(this)" >
+				</div>
+			</div>
+
+			<div class="form-group row justify-content-center">
+				<div class="col-md-6">
+					<label for="msg-input" class="col-form-label">Message</label>
+					<textarea class="vam form-control" name="message" id="msg-input" onblur="check(this)"></textarea>
+					<button type="submit" id="subButton" class="btn btn-default mt-md">Envoyer votre message</button>
+				</div>
+			</div>
+
+
+		</form>
+		<script src="js/main.js"></script>
+	</body>
